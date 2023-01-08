@@ -21,5 +21,4 @@ def mul(request, a, b):
 def div(request, a, b):
     if b == 0:
         return HttpResponse("Nie można dzielić przez 0")
-    else:
-        return HttpResponse(a / b)
+    return HttpResponse(a / b)
